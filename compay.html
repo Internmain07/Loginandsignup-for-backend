@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="companystyle.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">I-Intern</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <button class="btn" onclick="search()">Search</button>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Internship & <br><span>Job</span> <br>Opportunities</h1>
+            <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt neque 
+                 expedita atque eveniet <br> quis nesciunt. Quos nulla vero consequuntur, fugit nemo ad delectus 
+                <br> a quae totam ipsa illum minus laudantium?</p>
+                <button class="cn"><a href="#">JOIN US</a></button>
+                <div class="form">
+                    <h2>Company Register</h2>
+                    <input type="name" id="name" name="name" placeholder="Enter Your Name">
+                    <input type="email" id="email" name="email" placeholder="Enter Email Here">
+                    <input type="password" id="password" name="password" placeholder="Create Your Password"
+                       pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).{8,}"
+                       title="Must contain at least one number, one uppercase letter, one lowercase letter, one special character (@#$%^&+=), and at least 8 or more characters" required>
+                    <input type="name" id="confirm-password" name="confirm-password" placeholder="Confirm Your Password" required>
+                    <input type="mobile" id="mobile" name="mobile" maxlength="10" placeholder="Enter mobile Number">
+                    <button class="btnn" onclick="signup()">Sign up</button>
+                    <p class="link">Already Have An Account<br>
+                    <a href="login.html">Log in</a> here</p>
+                </div>
+        </div>
+    </div>
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="text-center">ABOUT US</h1>
+        <div class="container-fluid" id="about-container">
+            <div class="row" id="banner-row">
+                <div class="col-md-5" id="about-col">
+                    <ul style="font-size:16 px;">
+                        <p>
+                            Kratos is all about Delivering High 
+                            Quality web design and development
+                            services, Cost effective and
+                            reliable solutions.
+                        </p>
+                        <p>SCHOOL/COLLEGE MANAGEMENT SOFTWARE
+                            (CAMPUS PRO)</p>
+                        <p>
+                            Let us take care of your Business needs.
+                            Customer Productivity is our Priority.
+                        </p>				
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr/>
+    <script src="home.js"></script>
+</body>
+</html>
